@@ -47,7 +47,11 @@ class HTMLCDParser(HTMLParser):
                     "div": "",
                     "ol": "",
                     "ul": "",
-                    "li": ""}
+                    "li": "",
+                     "td": "|",
+                   "th": "|",
+                   "tr": "",
+                   "table": ""}
 
         self.end = {"h1": " ==",
                     "h2": " ===",
@@ -69,7 +73,12 @@ class HTMLCDParser(HTMLParser):
                     "a": "]]",
                     "ol": "\n",
                     "ul": "\n",
-                    "li": "\n"}
+                    "li": "\n",
+                    "td": "|",
+                    "th": "|",
+                    "tr": "\n",
+                    "table": ""}
+        
         self.list_type = "ol"
         self.item_no = 0
 
